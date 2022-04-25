@@ -50,15 +50,15 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
     const hours = (new Date()).getHours();
     if (21 <= hours || hours < 6) {
       wipeStyle();
-      stopWithText("ツイネタはメモして寝てください。 (21:00-06:00)");
+      stopWithText("ツイネタはメモして寝てください。 (21:00-07:00)");
       return true;
     }
     if (9 <= hours && hours <= 11) {
       wipeStyle();
-      stopWithText("ツイネタはメモして生産活動してください (09:00-11:00)");
+      stopWithText("ツイネタはメモして生産活動してください (09:00-12:00)");
       return true;
     }
-    if (13 <= hours && hours <= 19) {
+    if (13 <= hours && hours <= 18) {
       wipeStyle();
       stopWithText("ツイネタはメモして生産活動してください (13:00-19:00)");
       return true;
